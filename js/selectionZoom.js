@@ -22,7 +22,7 @@
       };
       let flag = false;
       imgContainer.addEventListener("mousedown", e => {
-          if (e.button == 1) { //CUSTOM
+          if (e.button == 0 && e.ctrlKey) { //CUSTOM
               flag = true;
               start.x = e.clientX;
               start.y = e.clientY;

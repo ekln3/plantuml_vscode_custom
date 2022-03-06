@@ -5,7 +5,7 @@ function addDrageScroll() {
     document.getElementById('image-container').addEventListener("mousedown", e => {
         //CUSTOM{
         e.preventDefault()
-        if (e.button == 0) flag = true;
+        if (e.button == 1 || (e.button == 0 && !e.ctrlKey)) flag = true;
         //CUSTOM}
         lastClientX = e.clientX;
         lastClientY = e.clientY;
